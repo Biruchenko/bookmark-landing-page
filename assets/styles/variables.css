@@ -1,0 +1,23 @@
+:root {
+  /* === Colors === */
+  --color-white: #fff;
+  --color-white-a015: rgba(255, 255, 255, 0.15);
+  --color-black: #000;
+  --color-black-a025: rgba(0, 0, 0, 0.25);
+  --color-blue-950: #242a45;
+  --color-blue-950-a015: rgba(36, 42, 69, 0.15);
+  --color-blue-950-a025: rgba(36, 42, 69, 0.25);
+  --color-blue-950-a05: rgba(36, 42, 69, 0.5);
+  --color-blue-950-a075: rgba(36, 42, 69, 0.75);
+  --color-blue-950-a095: rgba(36, 42, 69, 0.95);
+  --color-blue-600: #5267df;
+  --color-grey-600: #5b6074;
+  --color-grey-600-a075: rgba(91, 96, 116, 0.75);
+  --color-grey-50: #f7f7f7;
+  --color-red-400: #fa5959;
+  --shadow: 0 8px 8px -4px rgba(73, 93, 207, 0.05);
+  --shadow-2: 0 10px 20px -5px rgba(73, 93, 207, 0.05);
+  --shadow-3: 0 5px 5px rgba(0, 0, 0, 0.5);
+  /* === Typography === */
+  --font-main: "Rubik", sans-serif;
+}

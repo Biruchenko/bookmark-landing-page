@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<title>Frontend Mentor | Bookmark landing page</title>
+	<link rel="stylesheet" href="./assets/styles/iconfont.css" />
+	<link rel="stylesheet" href="./assets/styles/styles.css">
+	<script type="module" src="./assets/scripts/script.js"></script>
+	<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+	<style>
+	</style>
+</head>
+
+<body>
+	<a href="#main" class="skip-link sr-only">Skip to main content</a>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__wrapper">
+					<a href="#" class="header__logo logo" aria-label="Bookmark">
+						<svg class="logo__icon" aria-hidden="true" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<circle cx="12.5" cy="12.5" r="12.5" />
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M11 7C9.89543 7 9 7.89543 9 9V19L12.5395 15.5609L16.0789 19V9C16.0789 7.89543 15.1835 7 14.0789 7H11Z" />
+						</svg>
+						<svg class="logo__text" aria-hidden="true" width="111" height="14" viewBox="0 0 111 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M14.6907 13.0387C15.7547 13.6547 16.94 13.9627 18.2467 13.9627C19.5533 13.9627 20.7387 13.6547 21.8027 13.0387C22.8667 12.4227 23.7036 11.5796 24.3133 10.5093C24.9231 9.43911 25.228 8.26312 25.228 6.98133C25.228 5.69955 24.9231 4.52356 24.3133 3.45333C23.7036 2.38311 22.8667 1.54 21.8027 0.924C20.7387 0.307997 19.5533 0 18.2467 0C16.94 0 15.7547 0.307997 14.6907 0.924C13.6267 1.54 12.7898 2.38311 12.18 3.45333C11.5702 4.52356 11.2653 5.69955 11.2653 6.98133C11.2653 8.26312 11.5702 9.43911 12.18 10.5093C12.7898 11.5796 13.6267 12.4227 14.6907 13.0387ZM5.22667 0.298667H0V13.664H5.41333C6.22223 13.664 6.95955 13.5116 7.62533 13.2067C8.29111 12.9018 8.82 12.4662 9.212 11.9C9.604 11.3338 9.8 10.6836 9.8 9.94933C9.8 9.19022 9.59467 8.54 9.184 7.99867C8.77333 7.45733 8.21956 7.06222 7.52267 6.81333V6.664C8.05778 6.40267 8.49022 6.02622 8.82 5.53467C9.14978 5.04311 9.31467 4.46134 9.31467 3.78933C9.31467 3.15466 9.13422 2.56978 8.77333 2.03467C8.41244 1.49955 7.91778 1.07645 7.28933 0.765333C6.66089 0.454221 5.97334 0.298667 5.22667 0.298667ZM6.356 5.292C6.02622 5.59689 5.58756 5.74933 5.04 5.74933H2.52V2.55733H5.11467C5.63734 2.55733 6.05733 2.70978 6.37467 3.01467C6.692 3.31956 6.85067 3.696 6.85067 4.144C6.85067 4.60445 6.68578 4.98711 6.356 5.292ZM5.32 11.368C5.92978 11.368 6.40578 11.2093 6.748 10.892C7.09022 10.5747 7.26133 10.1609 7.26133 9.65067C7.26133 9.14044 7.08711 8.72356 6.73867 8.4C6.39022 8.07644 5.89245 7.91467 5.24533 7.91467H2.52V11.368H5.32ZM18.2467 11.5733C19.068 11.5733 19.8209 11.3804 20.5053 10.9947C21.1898 10.6089 21.728 10.0676 22.12 9.37067C22.512 8.67377 22.708 7.87734 22.708 6.98133C22.708 6.08533 22.512 5.28889 22.12 4.592C21.728 3.89511 21.1898 3.35378 20.5053 2.968C19.8209 2.58222 19.068 2.38933 18.2467 2.38933C17.4253 2.38933 16.6756 2.58222 15.9973 2.968C15.3191 3.35378 14.784 3.89511 14.392 4.592C14 5.28889 13.804 6.08533 13.804 6.98133C13.804 7.87734 14 8.67377 14.392 9.37067C14.784 10.0676 15.3191 10.6089 15.9973 10.9947C16.6756 11.3804 17.4253 11.5733 18.2467 11.5733ZM30.044 13.0387C31.108 13.6547 32.2933 13.9627 33.6 13.9627C34.9067 13.9627 36.092 13.6547 37.156 13.0387C38.22 12.4227 39.0569 11.5796 39.6667 10.5093C40.2764 9.43911 40.5813 8.26312 40.5813 6.98133C40.5813 5.69955 40.2764 4.52356 39.6667 3.45333C39.0569 2.38311 38.22 1.54 37.156 0.924C36.092 0.307997 34.9067 0 33.6 0C32.2933 0 31.108 0.307997 30.044 0.924C28.98 1.54 28.1431 2.38311 27.5333 3.45333C26.9236 4.52356 26.6187 5.69955 26.6187 6.98133C26.6187 8.26312 26.9236 9.43911 27.5333 10.5093C28.1431 11.5796 28.98 12.4227 30.044 13.0387ZM33.6 11.5733C34.4213 11.5733 35.1742 11.3804 35.8587 10.9947C36.5431 10.6089 37.0813 10.0676 37.4733 9.37067C37.8653 8.67377 38.0613 7.87734 38.0613 6.98133C38.0613 6.08533 37.8653 5.28889 37.4733 4.592C37.0813 3.89511 36.5431 3.35378 35.8587 2.968C35.1742 2.58222 34.4213 2.38933 33.6 2.38933C32.7787 2.38933 32.0289 2.58222 31.3507 2.968C30.6724 3.35378 30.1373 3.89511 29.7453 4.592C29.3533 5.28889 29.1573 6.08533 29.1573 6.98133C29.1573 7.87734 29.3533 8.67377 29.7453 9.37067C30.1373 10.0676 30.6724 10.6089 31.3507 10.9947C32.0289 11.3804 32.7787 11.5733 33.6 11.5733ZM45.3507 0.298667H42.8307V13.664H45.3507V9.744L46.8627 7.97067L50.8573 13.664H53.9373V13.5147L48.5987 5.97333L53.4333 0.448V0.298667H50.3907L45.5 6.02933H45.3507V0.298667ZM56.7778 0H60.0258L63.5724 9.38933H63.7218L67.2684 0H70.5351V13.3653H68.0338V6.776L68.1831 4.55467H68.0338L64.6364 13.3653H62.6764L59.2604 4.55467H59.1111L59.2604 6.776V13.3653H56.7778V0ZM80.472 0H77.5787L72.576 13.3653H75.3573L76.4773 10.1733H81.592L82.712 13.3653H85.4933L80.472 0ZM80.7707 7.85867L79.5947 4.49867L79.1093 2.89333H78.96L78.4747 4.49867L77.28 7.85867H80.7707ZM92.4249 0H87.5529V13.3653H90.0729V8.344H91.2489L94.7022 13.3653H97.5956V13.216L94.0116 8.08267L94.0302 7.952C94.8516 7.65333 95.5329 7.17111 96.0742 6.50533C96.6156 5.83955 96.8862 5.07734 96.8862 4.21867C96.8862 3.40977 96.6996 2.68489 96.3262 2.044C95.9529 1.40311 95.4271 0.902224 94.7489 0.541333C94.0707 0.180443 93.296 0 92.4249 0ZM92.4062 6.02933C92.9787 6.02933 93.4453 5.85511 93.8062 5.50667C94.1671 5.15822 94.3476 4.71645 94.3476 4.18133C94.3476 3.67111 94.1764 3.23556 93.8342 2.87467C93.492 2.51378 93.0285 2.33333 92.4436 2.33333H90.0729V6.02933H92.4062ZM102.156 0H99.6364V13.3653H102.156V9.44533L103.668 7.672L107.663 13.3653H110.743V13.216L105.404 5.67467L110.239 0.149333V0H107.196L102.306 5.73067H102.156V0Z" />
+						</svg>
+					</a>
+					<div class="header__menu menu">
+						<nav class="menu__body" id="menu-body" aria-label="Primary navigation">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="#features" class="menu__link">FEATURES</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">PRICING</a>
+								</li>
+								<li class="menu__item">
+									<a href="#contact" class="menu__link">CONTACT</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__btn button button--secondary">LOGIN</a>
+								</li>
+							</ul>
+							<ul class="menu__social social">
+								<li class="social__item">
+									<a href="https://www.facebook.com" class="social__link" aria-label="Facebook" target="_blank">
+										<span class="social__link-icon icon-facebook" aria-hidden="true"></span>
+									</a>
+								</li>
+								<li class="social__item">
+									<a href="https://x.com" class="social__link" aria-label="Twitter" target="_blank">
+										<span class="social__link-icon icon-twitter" aria-hidden="true"></span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<button type="button" class="header__btn-menu" aria-label="Open navigation menu" aria-expanded="false" aria-controls="menu-body">
+						<span aria-hidden="true"></span>
+					</button>
+				</div>
+			</div>
+		</header>
+		<main id="main">
+			<section class="hero">
+				<div class="hero__container">
+					<div class="hero__wrapper">
+						<div class="hero__body">
+							<h1 class="hero__title">A Simple Bookmark Manager</h1>
+							<div class="hero__text text">
+								<p>A clean and simple interface to organize your favorite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+							</div>
+							<div class="hero__actions">
+								<a href="#cta" class="hero__btn button button--primary">Get it on Chrome</a>
+								<a href="#cta" class="hero__btn button button--alternative">Get it on Firefox</a>
+							</div>
+						</div>
+						<figure class="hero__image">
+							<img src="./assets/images/illustration-hero.svg" alt="" aria-hidden="true">
+						</figure>
+						<!-- <div class="hero__image-wrapper">
+						</div> -->
+					</div>
+				</div>
+			</section>
+			<section id="features" class="features">
+				<div class="features__container">
+					<div class="features__wrapper">
+						<div class="features__header section-header">
+							<h2 class="features__title title" id="features-title">Features</h2>
+							<div class="features__text text">
+								<p>Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+							</div>
+						</div>
+						<div class="features__tabs tabs-features">
+							<div class="tabs-features__controls" role="tablist" aria-labelledby="features-title">
+								<button class="tabs-features__control" id="tab-simple-bookmarking" role="tab" aria-controls="panel-simple-bookmarking" aria-selected="true"><span>Simple Bookmarking</span></button>
+								<button class="tabs-features__control" id="tab-speedy-searching" role="tab" aria-controls="panel-speedy-searching" aria-selected="false"><span>Speedy Searching</span></button>
+								<button class="tabs-features__control" id="tab-easy-sharing" role="tab" aria-controls="panel-easy-sharing" aria-selected="false"><span>Easy Sharing</span></button>
+							</div>
+							<div class="tabs-features__tab" id="panel-simple-bookmarking" aria-labelledby="tab-simple-bookmarking" role="tabpanel">
+								<div class="tabs-features__wrapper">
+									<figure class="tabs-features__image">
+										<img src="./assets/images/illustration-features-tab-1.svg" alt="" aria-hidden="true">
+									</figure>
+									<div class="tabs-features__body">
+										<h3 class="tabs-features__title title">Bookmark in one click</h3>
+										<div class="tabs-features__text text">
+											<p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+										</div>
+										<a href="#" class="tabs-features__button button button--primary">More info</a>
+									</div>
+								</div>
+							</div>
+							<div class="tabs-features__tab" id="panel-speedy-searching" aria-labelledby="tab-speedy-searching" role="tabpanel">
+								<div class="tabs-features__wrapper">
+									<figure class="tabs-features__image">
+										<img src="./assets/images/illustration-features-tab-2.svg" alt="" aria-hidden="true">
+									</figure>
+									<div class="tabs-features__body">
+										<h3 class="tabs-features__title title">Intelligent search</h3>
+										<div class="tabs-features__text text">
+											<p>Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
+										</div>
+										<a href="#" class="tabs-features__button button button--primary">More info</a>
+									</div>
+								</div>
+							</div>
+							<div class="tabs-features__tab" id="panel-easy-sharing" aria-labelledby="tab-easy-sharing" role="tabpanel">
+								<div class="tabs-features__wrapper">
+									<figure class="tabs-features__image">
+										<img src="./assets/images/illustration-features-tab-3.svg" alt="" aria-hidden="true">
+									</figure>
+									<div class="tabs-features__body">
+										<h3 class="tabs-features__title title">Share your bookmarks</h3>
+										<div class="tabs-features__text text">
+											<p>Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
+										</div>
+										<a href="#" class="tabs-features__button button button--primary">More info</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="cta" class="cta">
+				<div class="cta__container">
+					<div class="cta__wrapper">
+						<div class="cta__header section-header">
+							<h2 class="cta__title title">Download the extension</h2>
+							<div class="cta__text">
+								<p>We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.</p>
+							</div>
+						</div>
+						<div class="cta__items">
+							<div class="cta__item item-cta">
+								<figure class="item-cta__image">
+									<img src="./assets/images/logo-chrome.svg" alt="Google Chrome logo">
+								</figure>
+								<div class="item-cta__body">
+									<div class="item-cta__content">
+										<h3 class="item-cta__title">Add to Chrome</h3>
+										<div class="item-cta__description">
+											<p>Minimum version 62</p>
+										</div>
+									</div>
+									<div class="item-cta__decors">
+										<span class="item-cta__decor" aria-hidden="true"></span>
+										<span class="item-cta__decor" aria-hidden="true"></span>
+										<span class="item-cta__decor" aria-hidden="true"></span>
+										<span class="item-cta__decor" aria-hidden="true"></span>
+										<span class="item-cta__decor" aria-hidden="true"></span>
+										<span class="item-cta__decor" aria-hidden="true"></span>
+										<span class="item-cta__decor" aria-hidden="true"></span>
+										<span class="item-cta__decor" aria-hidden="true"></span>
+										<span class="item-cta__decor" aria-hidden="true"></span>
+										<span class="item-cta__decor" aria-hidden="true"></span>
+										<span class="item-cta__decor" aria-hidden="true"></span>
+										<span class="item-cta__decor" aria-hidden="true"></span>
+										<span class="item-cta__decor" aria-hidden="true"></span>
+										<span class="item-cta__decor" aria-hidden="true"></span>
+										<span class="item-cta__decor" aria-hidden="true"></span>
+										<span class="item-cta__decor" aria-hidden="true"></span>
+										<span class="item-cta__decor" aria-hidden="true"></span>
+									</div>
+									<button class="item-cta__button button button--primary" type="button">Add & Install Extension</button>
+								</div>
+							</div>
+							<div class="cta__item item-cta">
+								<figure class="item-cta__image">
+									<img src="./assets/images/logo-firefox.svg" alt="Firefox logo">
+								</figure>
+								<div class="item-cta__body">
+									<div class="item-cta__content">
+										<h3 class="item-cta__title">Add to Firefox</h3>
+										<div class="item-cta__description">
+											<p>Minimum version 55</p>
+										</div>
+									</div>
+									<div class="item-cta__decors">
+										<span class="item-cta__decor" aria-hidden="true"></span>
+										<span class="item-cta__decor" aria-hidden="true"></span>
+										<span class="item-cta__decor" aria-hidden="true"></span>
+										<span class="item-cta__decor" aria-hidden="true"></span>
+										<span class="item-cta__decor" aria-hidden="true"></span>
+										<span class="item-cta__decor" aria-hidden="true"></span>
+										<span class="item-cta__decor" aria-hidden="true"></span>
+										<span class="item-cta__decor" aria-hidden="true"></span>
+										<span class="item-cta__decor" aria-hidden="true"></span>
+										<span class="item-cta__decor" aria-hidden="true"></span>
+										<span class="item-cta__decor" aria-hidden="true"></span>
+										<span class="item-cta__decor" aria-hidden="true"></span>
+										<span class="item-cta__decor" aria-hidden="true"></span>
+										<span class="item-cta__decor" aria-hidden="true"></span>
+										<span class="item-cta__decor" aria-hidden="true"></span>
+										<span class="item-cta__decor" aria-hidden="true"></span>
+										<span class="item-cta__decor" aria-hidden="true"></span>
+									</div>
+									<button class="item-cta__button button button--primary" type="button">Add & Install Extension</button>
+								</div>
+							</div>
+							<div class="cta__item item-cta">
+								<figure class="item-cta__image">
+									<img src="./assets/images/logo-opera.svg" alt="Opera logo">
+								</figure>
+								<div class="item-cta__body">
+									<div class="item-cta__content">
+										<h3 class="item-cta__title">Add to Opera</h3>
+										<div class="item-cta__description">
+											<p>Minimum version 46</p>
+										</div>
+									</div>
+									<div class="item-cta__decors">
+										<span class="item-cta__decor" aria-hidden="true"></span>
+										<span class="item-cta__decor" aria-hidden="true"></span>
+										<span class="item-cta__decor" aria-hidden="true"></span>
+										<span class="item-cta__decor" aria-hidden="true"></span>
+										<span class="item-cta__decor" aria-hidden="true"></span>
+										<span class="item-cta__decor" aria-hidden="true"></span>
+										<span class="item-cta__decor" aria-hidden="true"></span>
+										<span class="item-cta__decor" aria-hidden="true"></span>
+										<span class="item-cta__decor" aria-hidden="true"></span>
+										<span class="item-cta__decor" aria-hidden="true"></span>
+										<span class="item-cta__decor" aria-hidden="true"></span>
+										<span class="item-cta__decor" aria-hidden="true"></span>
+										<span class="item-cta__decor" aria-hidden="true"></span>
+										<span class="item-cta__decor" aria-hidden="true"></span>
+										<span class="item-cta__decor" aria-hidden="true"></span>
+										<span class="item-cta__decor" aria-hidden="true"></span>
+										<span class="item-cta__decor" aria-hidden="true"></span>
+									</div>
+									<button class="item-cta__button button button--primary" type="button">Add & Install Extension</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="faq">
+				<div class="faq__container">
+					<div class="faq__wrapper">
+						<div class="faq__header section-header">
+							<h2 class="faq__title title" id="tabs-title"> Frequently Asked Questions </h2>
+							<div class="faq__description">
+								<p>Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.</p>
+							</div>
+						</div>
+						<div class="faq__tabs tabs-faq">
+							<div class="tabs-faq__btns" role="tablist" aria-labelledby="tabs-title">
+								<div class="tabs-faq__item">
+									<button id="tab-1" type="button" class="tabs-faq__btn" role="tab" aria-controls="tabpanel-1" aria-selected="false">
+										<span class="tabs-faq__btn-text">What is Bookmark?</span>
+										<span class="tabs-faq__btn-icon icon-arrow" aria-hidden="true"></span>
+									</button>
+									<div id="tabpanel-1" class="tabs-faq__body" role="tabpanel" aria-labelledby="tab-1" aria-hidden="true">
+										<div class="tabs-faq__text">
+											<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+										</div>
+									</div>
+								</div>
+								<div class="tabs-faq__item">
+									<button id="tab-2" type="button" class="tabs-faq__btn" role="tab" aria-controls="tabpanel-2" aria-selected="false">
+										<span class="tabs-faq__btn-text">How can I request a new browser?</span>
+										<span class="tabs-faq__btn-icon icon-arrow" aria-hidden="true"></span>
+									</button>
+									<div id="tabpanel-2" class="tabs-faq__body" role="tabpanel" aria-labelledby="tab-2" aria-hidden="true">
+										<div class="tabs-faq__text">
+											<p> Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+										</div>
+									</div>
+								</div>
+								<div class="tabs-faq__item">
+									<button id="tab-3" type="button" class="tabs-faq__btn" role="tab" aria-controls="tabpanel-3" aria-selected="false">
+										<span class="tabs-faq__btn-text">Is there a mobile app?</span>
+										<span class="tabs-faq__btn-icon icon-arrow" aria-hidden="true"></span>
+									</button>
+									<div id="tabpanel-3" class="tabs-faq__body" role="tabpanel" aria-labelledby="tab-3" aria-hidden="true">
+										<div class="tabs-faq__text">
+											<p>Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin ex et ultricies bibendum.</p>
+										</div>
+									</div>
+								</div>
+								<div class="tabs-faq__item">
+									<button id="tab-4" type="button" class="tabs-faq__btn" role="tab" aria-controls="tabpanel-4" aria-selected="false">
+										<span class="tabs-faq__btn-text">What about other Chromium browsers?</span>
+										<span class="tabs-faq__btn-icon icon-arrow" aria-hidden="true"></span>
+									</button>
+									<div id="tabpanel-4" class="tabs-faq__body" role="tabpanel" aria-labelledby="tab-4" aria-hidden="true">
+										<div class="tabs-faq__text">
+											<p>Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<a href="#" class="faq__btn button button--primary">More Info</a>
+					</div>
+				</div>
+			</section>
+			<section id="contact" class="contact">
+				<div class="contact__container">
+					<div class="contact__wrapper">
+						<div class="contact__header">
+							<span class="contact__subtitle">35,000+ ALREADY JOINED</span>
+							<h2 class="contact__title title">Stay up-to-date with what we’re doing</h2>
+						</div>
+						<form action="" class="contact__form form-contact" novalidate>
+							<div class="form-contact__item">
+								<label for="contact-email" class="sr-only">Email address</label>
+								<input type="email" name="email" id="contact-email" autocomplete="email" aria-invalid="false" aria-describedby="contact-email-error" placeholder="Enter your email address" class="form-contact__input" required>
+								<span class="form-contact__error-icon" aria-hidden="true"></span>
+								<span class="form-contact__error-text" id="contact-email-error" role="alert">Whoops, make sure it’s an email</span>
+							</div>
+							<button type="submit" class="form-contact__btn button button--secondary">Contact Us</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__wrapper">
+					<div class="footer__body">
+						<a href="#" class="footer__logo logo" aria-label="Bookmark">
+							<svg class="logo__icon" aria-hidden="true" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<circle cx="12.5" cy="12.5" r="12.5" />
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M11 7C9.89543 7 9 7.89543 9 9V19L12.5395 15.5609L16.0789 19V9C16.0789 7.89543 15.1835 7 14.0789 7H11Z" />
+							</svg>
+							<svg class="logo__text" aria-hidden="true" width="111" height="14" viewBox="0 0 111 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M14.6907 13.0387C15.7547 13.6547 16.94 13.9627 18.2467 13.9627C19.5533 13.9627 20.7387 13.6547 21.8027 13.0387C22.8667 12.4227 23.7036 11.5796 24.3133 10.5093C24.9231 9.43911 25.228 8.26312 25.228 6.98133C25.228 5.69955 24.9231 4.52356 24.3133 3.45333C23.7036 2.38311 22.8667 1.54 21.8027 0.924C20.7387 0.307997 19.5533 0 18.2467 0C16.94 0 15.7547 0.307997 14.6907 0.924C13.6267 1.54 12.7898 2.38311 12.18 3.45333C11.5702 4.52356 11.2653 5.69955 11.2653 6.98133C11.2653 8.26312 11.5702 9.43911 12.18 10.5093C12.7898 11.5796 13.6267 12.4227 14.6907 13.0387ZM5.22667 0.298667H0V13.664H5.41333C6.22223 13.664 6.95955 13.5116 7.62533 13.2067C8.29111 12.9018 8.82 12.4662 9.212 11.9C9.604 11.3338 9.8 10.6836 9.8 9.94933C9.8 9.19022 9.59467 8.54 9.184 7.99867C8.77333 7.45733 8.21956 7.06222 7.52267 6.81333V6.664C8.05778 6.40267 8.49022 6.02622 8.82 5.53467C9.14978 5.04311 9.31467 4.46134 9.31467 3.78933C9.31467 3.15466 9.13422 2.56978 8.77333 2.03467C8.41244 1.49955 7.91778 1.07645 7.28933 0.765333C6.66089 0.454221 5.97334 0.298667 5.22667 0.298667ZM6.356 5.292C6.02622 5.59689 5.58756 5.74933 5.04 5.74933H2.52V2.55733H5.11467C5.63734 2.55733 6.05733 2.70978 6.37467 3.01467C6.692 3.31956 6.85067 3.696 6.85067 4.144C6.85067 4.60445 6.68578 4.98711 6.356 5.292ZM5.32 11.368C5.92978 11.368 6.40578 11.2093 6.748 10.892C7.09022 10.5747 7.26133 10.1609 7.26133 9.65067C7.26133 9.14044 7.08711 8.72356 6.73867 8.4C6.39022 8.07644 5.89245 7.91467 5.24533 7.91467H2.52V11.368H5.32ZM18.2467 11.5733C19.068 11.5733 19.8209 11.3804 20.5053 10.9947C21.1898 10.6089 21.728 10.0676 22.12 9.37067C22.512 8.67377 22.708 7.87734 22.708 6.98133C22.708 6.08533 22.512 5.28889 22.12 4.592C21.728 3.89511 21.1898 3.35378 20.5053 2.968C19.8209 2.58222 19.068 2.38933 18.2467 2.38933C17.4253 2.38933 16.6756 2.58222 15.9973 2.968C15.3191 3.35378 14.784 3.89511 14.392 4.592C14 5.28889 13.804 6.08533 13.804 6.98133C13.804 7.87734 14 8.67377 14.392 9.37067C14.784 10.0676 15.3191 10.6089 15.9973 10.9947C16.6756 11.3804 17.4253 11.5733 18.2467 11.5733ZM30.044 13.0387C31.108 13.6547 32.2933 13.9627 33.6 13.9627C34.9067 13.9627 36.092 13.6547 37.156 13.0387C38.22 12.4227 39.0569 11.5796 39.6667 10.5093C40.2764 9.43911 40.5813 8.26312 40.5813 6.98133C40.5813 5.69955 40.2764 4.52356 39.6667 3.45333C39.0569 2.38311 38.22 1.54 37.156 0.924C36.092 0.307997 34.9067 0 33.6 0C32.2933 0 31.108 0.307997 30.044 0.924C28.98 1.54 28.1431 2.38311 27.5333 3.45333C26.9236 4.52356 26.6187 5.69955 26.6187 6.98133C26.6187 8.26312 26.9236 9.43911 27.5333 10.5093C28.1431 11.5796 28.98 12.4227 30.044 13.0387ZM33.6 11.5733C34.4213 11.5733 35.1742 11.3804 35.8587 10.9947C36.5431 10.6089 37.0813 10.0676 37.4733 9.37067C37.8653 8.67377 38.0613 7.87734 38.0613 6.98133C38.0613 6.08533 37.8653 5.28889 37.4733 4.592C37.0813 3.89511 36.5431 3.35378 35.8587 2.968C35.1742 2.58222 34.4213 2.38933 33.6 2.38933C32.7787 2.38933 32.0289 2.58222 31.3507 2.968C30.6724 3.35378 30.1373 3.89511 29.7453 4.592C29.3533 5.28889 29.1573 6.08533 29.1573 6.98133C29.1573 7.87734 29.3533 8.67377 29.7453 9.37067C30.1373 10.0676 30.6724 10.6089 31.3507 10.9947C32.0289 11.3804 32.7787 11.5733 33.6 11.5733ZM45.3507 0.298667H42.8307V13.664H45.3507V9.744L46.8627 7.97067L50.8573 13.664H53.9373V13.5147L48.5987 5.97333L53.4333 0.448V0.298667H50.3907L45.5 6.02933H45.3507V0.298667ZM56.7778 0H60.0258L63.5724 9.38933H63.7218L67.2684 0H70.5351V13.3653H68.0338V6.776L68.1831 4.55467H68.0338L64.6364 13.3653H62.6764L59.2604 4.55467H59.1111L59.2604 6.776V13.3653H56.7778V0ZM80.472 0H77.5787L72.576 13.3653H75.3573L76.4773 10.1733H81.592L82.712 13.3653H85.4933L80.472 0ZM80.7707 7.85867L79.5947 4.49867L79.1093 2.89333H78.96L78.4747 4.49867L77.28 7.85867H80.7707ZM92.4249 0H87.5529V13.3653H90.0729V8.344H91.2489L94.7022 13.3653H97.5956V13.216L94.0116 8.08267L94.0302 7.952C94.8516 7.65333 95.5329 7.17111 96.0742 6.50533C96.6156 5.83955 96.8862 5.07734 96.8862 4.21867C96.8862 3.40977 96.6996 2.68489 96.3262 2.044C95.9529 1.40311 95.4271 0.902224 94.7489 0.541333C94.0707 0.180443 93.296 0 92.4249 0ZM92.4062 6.02933C92.9787 6.02933 93.4453 5.85511 93.8062 5.50667C94.1671 5.15822 94.3476 4.71645 94.3476 4.18133C94.3476 3.67111 94.1764 3.23556 93.8342 2.87467C93.492 2.51378 93.0285 2.33333 92.4436 2.33333H90.0729V6.02933H92.4062ZM102.156 0H99.6364V13.3653H102.156V9.44533L103.668 7.672L107.663 13.3653H110.743V13.216L105.404 5.67467L110.239 0.149333V0H107.196L102.306 5.73067H102.156V0Z" />
+							</svg>
+						</a>
+						<div class="footer__menu menu">
+							<nav class="menu__body" aria-label="Footer navigation">
+								<ul class="menu__list">
+									<li class="menu__item">
+										<a href="#features" class="menu__link">FEATURES</a>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link">PRICING</a>
+									</li>
+									<li class="menu__item">
+										<a href="#contact" class="menu__link">CONTACT</a>
+									</li>
+								</ul>
+								<ul class="menu__social social">
+									<li class="social__item">
+										<a href="https://www.facebook.com" class="social__link" aria-label="Facebook" target="_blank">
+											<span class="social__link-icon icon-facebook" aria-hidden="true"></span>
+										</a>
+									</li>
+									<li class="social__item">
+										<a href="https://x.com" class="social__link" aria-label="Twitter" target="_blank">
+											<span class="social__link-icon icon-twitter" aria-hidden="true"></span>
+										</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<div class="footer__attribution attribution"> Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>
