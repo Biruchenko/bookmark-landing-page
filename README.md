@@ -18,7 +18,7 @@ This is a landing page for a bookmark manager that supports different browsers l
 
 ### Links
 
-<!-- Add live link -->
+- https://biruchenko.github.io/bookmark-landing-page/
 
 ### Built with
 
